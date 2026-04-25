@@ -1,0 +1,40 @@
+async function emp_access() {
+    const requestOptions = {
+        method: 'POST',
+        headers: {
+            'Accept': 'application/json',
+            'Content-Type': 'application/json'
+        },
+        body: JSON.stringify({
+            emp_id:Number(document.getElementById("locker_id").value),
+            password:document.getElementById("otp_password").value
+        })
+
+    }
+    try{
+        const response = await fetch("https://iot-project-api.to-po-chun.repl.co/guest/openlocker",requestOptions)
+
+        if (!response.ok){
+            throw new Error("Network response was not okay")
+        }
+
+        const data = await response.json()
+        const match_status = data.match
+
+        console.log(data)
+        console.log(Number(document.getElementById("locker_id").value))
+        console.log(document.getElementById("otp_password").value)
+
+        if(match_status == true){
+            location.replace("/soruce_code/guest_unlock_okay.html")
+        }
+        else if(match_status == false){
+            alert("Your one-time password is wrong!")
+            
+            
+        }
+
+    } catch(error){
+        console.error("There was an error!", error)
+    }
+}
