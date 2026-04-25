@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Form</title>
+    <link rel="stylesheet" href="./css_file/logIn.css">
+</head>
+<body>
+
+ <div class="main-container">
+   <input type="checkbox" id="slide">
+   
+   <div class="container">
+     <div class="login-container">
+
+         <div class="text">
+            Login 
+         </div>
+   
+         <form action="#">
+            <div class="data">
+               <label for="">Employee ID</label>
+               <input type="text" id="login_emp_id" required>
+            </div>
+            <div class="data">
+               <label for="">Locker Password</label>
+               <input type="password" id="login_password" required>
+            </div>
+   
+            <div class="btn-login">
+               <button type="submit"  id="btn_submit">login</button>
+            </div>
+   
+            <div class="signup-link">
+               Want to own a locker ? <a href="#"><label for="slide" class="slide">Signup now</label></a>
+            </div>
+
+            <div class="signup-link">
+               Have one-time password ? <a href="guest_otp_unlock.html">Access here</label></a>
+            </div>
+         </form>
+      </div>
+     
+
+      <div class="signup-container">
+         <div class="text">Sign up</div>
+   
+         <form action="#">
+            <div class="data">
+               <label for="">Employee ID</label>
+               <input type="text" id="signup_emp_id" required>
+            </div>
+
+            <!-- <div class="data">
+               <label for="">Locker Number</label>
+               <input type="text" required>
+            </div> -->
+   
+            <div class="data">
+               <label for="">Password</label>
+               <input type="password" id="signup_password" required>
+            </div>
+   
+            <div class="btn-signup">
+               <button type="submit" id="signup_submit">Sign Up</button>
+            </div>
+   
+            <div class="signup-link">
+               Already own a locker ? <a href="#"><label for="slide" class="slide">Register now</label></a>
+            </div>
+         </form>
+
+      </div>
+ </div>
+
+ <script src="./js_file/index.js"></script>
+   
+</body>
+</html>

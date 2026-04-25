@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <!-- Font Awesome cdn css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+    <link rel="stylesheet" href="./css_file/control_panel.css">
+    <title>Locker Control Panel</title>
+</head>
+<body>
+
+    <header>
+        <h1  id="display_loc_num">Locker No:</h1>
+    </header>
+
+    <div class="lock_control">
+        <button name="Lock" id="lock"><i class="fa-solid fa-lock fa-5x button_lock"></i></button>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+        <button name="Unlock" id="unlock"><i class="fa-solid fa-lock-open fa-5x button_unlock"></i></button>
+    </div>
+    
+    <form action="">
+        <input type="text" id="emp_search_input" class="emp_search_input">
+        <button class="search-button" id="button_emp_search" type="button">
+            <i class="fa-solid fa-magnifying-glass"></i>
+        </button>
+        <div class="select">
+            <select name="departments" class="department_display">
+                <option value="all">All</option>
+                <option value="completed">Completed</option>
+                <option value="incomplete">Incomplete</option>
+            </select>
+        </div>
+    </form>
+
+    <div class="emp-container">
+        <ul class="emp-list" id="emp_list"></ul>
+    </div>
+
+    <script src="./js_file/index.js"></script>
+    
+</body>
+</html>
