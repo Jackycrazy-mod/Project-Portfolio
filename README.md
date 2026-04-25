@@ -10,7 +10,7 @@ Instead, I provide **system descriptions, my individual contributions, and key c
 - **My role:** Front-end adaptation + MongoDB schema design + Arduino testing  
 - **Tech:** HTML/CSS/JS, MongoDB, Arduino IDE
 
-- [Screenshots](#) - <img width="3468" height="4624" alt="20230703_144941" src="https://github.com/user-attachments/assets/5d86d562-9a2c-466f-8f22-d58e3bebf063" />
+- [Screenshots](#<img width="3468" height="4624" alt="20230703_144941" src="https://github.com/user-attachments/assets/9104b3b6-a14c-4af2-bf6d-43457d78ed55" />)
 - [Code snippet: MongoDB schema](#)  
 - [Code snippet: Arduino servo control (basic)](#)
 
