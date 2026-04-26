@@ -140,3 +140,8 @@ async function guest_access() {
     }
 }
 ```
+### 5. 
+- Frontend: HTML, CSS, JavaScript (vanilla, async/await, fetch API, sessionStorage)
+- Backend (designed by me, implemented by teammate): Node.js + Express REST API
+- Database: MongoDB (schema designed by me)
+- Hardware (logic designed by me, implemented by teammate): ESP32, electromagnetic lock, DHT11, HC-SR505, buzzer, LED
