@@ -1,4 +1,4 @@
-# Unmanned Store (Take & Go) – Final Year Project
+<img width="355" height="320" alt="image" src="https://github.com/user-attachments/assets/444e7519-c8f1-43d8-8edb-e7faf5c7e833" /># Unmanned Store (Take & Go) – Final Year Project
 
 An autonomous retail system that provides a seamless, cashier‑free shopping experience. Customers tap their NFC membership card to enter, pick items, and check out automatically via AI object detection. The system includes a membership management portal, inventory control, and sales analytics.
 
@@ -117,7 +117,7 @@ async function login() {
 }
 ```
 
-### Screenshots:
+### Screenshots (Check `Final Report.docx` for more detail)
 <table>
   <tr>
     <td align="center" width="446">
@@ -144,15 +144,14 @@ async function login() {
     </td>
   </tr>
   <tr>
-    <td align="center" width="446"><strong>Locker Showcase</strong><br><img src="https://github.com/user-attachments/assets/7e17a3a4-eb47-4f4c-9477-d57749425fa6" width="447" height="314"></td>
-    <td align="center" width="446"><strong>Top Up Pages</strong><br><img src="https://github.com/user-attachments/assets/72c36f7c-1f6e-4330-8606-6d15f17a4feb" width="447" height="314"></td>
+    <td align="center" width="446"><strong>Check Out Page</strong><br><img src="https://github.com/user-attachments/assets/96800e20-5e56-4c46-a783-a02be860a95d" width="447" height="314"></td>
+    <td align="center" width="446"><strong>Top Up Pages</strong><br><img src="https://github.com/user-attachments/assets/3a6db46a-c3ef-470f-9160-ba2b6a750fd1" width="447" height="314"></td>
   </tr>
   <tr>
-    <td align="center" width="446"><strong>Locker Showcase</strong><br><img src="https://github.com/user-attachments/assets/7e17a3a4-eb47-4f4c-9477-d57749425fa6" width="447" height="314"></td>
-    <td align="center" width="446"><strong>Top Up Pages</strong><br><img src="https://github.com/user-attachments/assets/3a6db46a-c3ef-470f-9160-ba2b6a750fd1" width="447" height="314"></td>
+    <td align="center" width="446"><strong>Reimbursemente</strong><br><img src="https://github.com/user-attachments/assets/f76b15d5-a513-4862-9c9c-cb81e950caa4" width="447" height="314"></td>
+    <td align="center" width="446"><strong>Top Up Pages</strong><br><img src="https://github.com/user-attachments/assets/72c36f7c-1f6e-4330-8606-6d15f17a4feb" width="447" height="314"></td>
   </tr>
 </table>
 
 ### Note
 This was a team final year project. The content above reflects only my personal contributions as project leader, system designer, AI model tuner, database schema designer, hardware interaction logic designer, and developer of the customer‑facing web portal + Flask API core. Backend sales analysis, hardware assembly, and Arduino code were completed by my teammates.
-
