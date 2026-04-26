@@ -46,7 +46,6 @@ The site includes a home page, about page, songs page, contact page, with intera
 ## Code Snippet (Email Validation)
 
 ```javascript
-// Contact form email validation
 function validateEmail() {
   const emailInput = document.getElementById("email").value;
   if (!emailInput.includes("@")) {
