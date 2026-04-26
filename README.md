@@ -1,6 +1,6 @@
 # Project Portfolio – Chung Tsz Kin
 
-This repository documents the projects I worked on during my studies at VTC (HD in AI and Smart Technology) and HKUST (BEng in Computer Engineering).  
+This repository documents the projects I worked on during my studies at VTC (HD in AI and Smart Technology). 
 Due to team collaboration and hardware-based nature, not all source code is included here.  
 Instead, this portfolio provides **system descriptions, my individual contributions, and key code snippets** to demonstrate my understanding and hands-on experience.
 
