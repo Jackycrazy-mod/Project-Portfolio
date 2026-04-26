@@ -36,8 +36,21 @@ I designed and implemented the **central hub** (the main intelligence of the sys
 - Threshold monitoring (temp >20°C, humidity >80%) → activate buzzer and LED.
 - PushPlus API integration – sends detailed alert message.
 - Serial logging and LCD output.
-
-*Key code snippet (alert & push notification) is shown below.*
+```
+int warring_tempreature = 20;
+int warring_humidity = 80;
+String content = "";
+String title = "";
+if (temperature_ble1 > warring_tempreature || ... ) {
+  digitalWrite(10, HIGH);  // warning LED
+  digitalWrite(br, HIGH);  // buzzer
+  if (temperature_ble1 > warring_tempreature) {
+    title += "BLE1温度超标/";
+    content += "BLE1        温度：" + String(temperature_ble1) + "℃\n";
+  }
+  // ... build JSON and send to PushPlus
+}
+```
 
 ### 2. Hardware Wiring & Assembly
 I physically connected all components to the Arduino Nano 33 IoT:
@@ -70,3 +83,4 @@ for i in range(len(data["feeds"])):
     print(f"Temperature\t|Humidity\t|Luminance")
     print(f"BLE1: {float(ble1_temp):.2f}\t|BLE1: {float(ble1_hum):.2f}\t|{float(light):.2f}")
     print(f"BLE2: {float(ble2_temp):.2f}\t|BLE2: {float(ble2_hum):.2f}\t|{float(light):.2f}")
+```
