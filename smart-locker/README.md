@@ -80,6 +80,63 @@ async function login() {
         alert("Wrong ID or wrong password")
     }
 }
+```
 
-#### Login Function
+#### Unlock Locker Function
 ```javascript
+async function lockerUnLock() {
+    const user_id = sessionStorage.getItem("user_id")
+    const requestOptions = {
+        method: 'PUT',
+        headers: { 'Accept': 'application/json', 'Content-Type': 'application/json' },
+        body: JSON.stringify({ emp_id: user_id, unlock: true })
+    }
+    const response = await fetch("https://iot-project-api.to-po-chun.repl.co/emp/openlocker", requestOptions)
+    const data = await response.json()
+    if (data.modifiedCount == 1) {
+        window.alert("You have successfully unlocked the locker!")
+    }
+}
+```
+
+#### Share Access (Generate OTP)
+```
+async function giveAccess(name) {
+    // get receiver_id from employee list, then
+    await getAccess(sender_id, receiver_id)
+}
+
+async function getAccess(sender_id, receiver_id) {
+    const requestOptions = {
+        method: 'POST',
+        headers: { 'Accept': 'application/json', 'Content-Type': 'application/json' },
+        body: JSON.stringify({ sender_id: Number(sender_id), receiver_id: Number(receiver_id), comment: "" })
+    }
+    const response = await fetch("https://iot-project-api.to-po-chun.repl.co/emp/share", requestOptions)
+    const data = await response.json()
+    window.alert(`Your OTP is ${data.otp}`)  // OTP also sent via email by backend
+}
+```
+
+#### Guest Access with OTP
+```
+async function guest_access() {
+    const requestOptions = {
+        method: 'PUT',
+        headers: { 'Accept': 'application/json', 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+            loc_id: Number(document.getElementById("locker_id").value),
+            otp: Number(document.getElementById("otp_password").value)
+        })
+    }
+    const response = await fetch("https://iot-project-api.to-po-chun.repl.co/guest/openlocker", requestOptions)
+    const data = await response.json()
+    if (data.match == true) {
+        sessionStorage.setItem("gloc_id", data.find_match.locker_id)
+        alert("Login successfully!")
+        location.replace("guest_unlock_okay.html")
+    } else {
+        alert("Your one-time password is wrong!")
+    }
+}
+```
