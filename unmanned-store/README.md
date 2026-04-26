@@ -1,4 +1,4 @@
-<img width="355" height="320" alt="image" src="https://github.com/user-attachments/assets/444e7519-c8f1-43d8-8edb-e7faf5c7e833" /># Unmanned Store (Take & Go) – Final Year Project
+# Unmanned Store (Take & Go) – Final Year Project
 
 An autonomous retail system that provides a seamless, cashier‑free shopping experience. Customers tap their NFC membership card to enter, pick items, and check out automatically via AI object detection. The system includes a membership management portal, inventory control, and sales analytics.
 
