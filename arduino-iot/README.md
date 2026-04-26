@@ -84,3 +84,15 @@ for i in range(len(data["feeds"])):
     print(f"BLE1: {float(ble1_temp):.2f}\t|BLE1: {float(ble1_hum):.2f}\t|{float(light):.2f}")
     print(f"BLE2: {float(ble2_temp):.2f}\t|BLE2: {float(ble2_hum):.2f}\t|{float(light):.2f}")
 ```
+
+## Hardware Components
+| Component | Purpose |
+| -------- | -------- |
+| Arduino Nano 33 IoT | Main controller |
+| Row 2, Col 1 | Row 2, Col 2 |
+
+## Screenshots
+<img width="940" height="527" alt="image" src="https://github.com/user-attachments/assets/f59474f4-bf8f-495b-aaa2-bc3a471bd6e6" />
+<img width="684" height="376" alt="image" src="https://github.com/user-attachments/assets/5ad5fb00-a1df-44b6-8be0-c92e0f61b6bb" />
+<img width="1920" height="1080" alt="image4" src="https://github.com/user-attachments/assets/35d0b82a-87ac-46af-8cde-bdf4ddaf541c" />
+
