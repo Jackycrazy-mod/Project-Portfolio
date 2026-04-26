@@ -89,7 +89,12 @@ for i in range(len(data["feeds"])):
 | Component | Purpose |
 | -------- | -------- |
 | Arduino Nano 33 IoT | Main controller |
-| Row 2, Col 1 | Row 2, Col 2 |
+| DHT11 | Local temperature/humidity |
+| Photoresistor (A3) | Light intensity |
+| Passive buzzer (pin 8) | Alarm |
+| LED (pin 10) | Warning indicator |
+| LED (pin 7) | Simulated lighting |
+| 16x2 LCD (parallel) | Local display |
 
 ## Screenshots
 <img width="940" height="527" alt="image" src="https://github.com/user-attachments/assets/f59474f4-bf8f-495b-aaa2-bc3a471bd6e6" />
