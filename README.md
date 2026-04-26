@@ -11,7 +11,7 @@ Instead, this portfolio provides **system descriptions, my individual contributi
 | Project | Technologies | My Focus |
 |---------|--------------|----------|
 | [Paper Idol Fans Club Website](./paper-idol-website/README.md) | HTML, CSS, JS (responsive, hover effects, form validation) | Front-end adaptation, responsive navigation, validation logic |
-| [Arduino IoT Sensing System](./arduino-iot/README.md) | Arduino IDE, C++, ThingView, DHT11 | Full Arduino coding (sensor reading, serial output), cloud upload |
+| [Arduino IoT Sensing System](./arduino-iot/README.md) | Arduino IDE, Python, ThingView, DHT11 | Full Arduino coding (sensor reading, serial output), cloud upload |
 | [Smart Locker System](./smart-locker/README.md) | HTML/CSS/JS, MongoDB, Arduino, API | Web app development, initial design, database structure |
 | [Restaurant POS System](./pos-system/README.md) | HTML/CSS/JS, Vue.js (template modification), Node.js, MongoDB | Front-end customization, localStorage cart logic, UI adaptation |
 | [AI Travel & Research Agent](./ai-travel-agent/README.md) | LangChain, OpenAI, Serper API, Streamlit | AI model integration, report writing, system design |
