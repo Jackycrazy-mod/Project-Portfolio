@@ -80,3 +80,6 @@ async function login() {
         alert("Wrong ID or wrong password")
     }
 }
+
+#### Login Function
+```javascript
