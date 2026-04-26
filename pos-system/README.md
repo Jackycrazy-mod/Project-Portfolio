@@ -110,3 +110,9 @@ Below is the ER diagram I designed for the MongoDB database (implementation by t
 - Client storage: localStorage (cart persistence)
 - API calls: Fetch API (async/await)
 - Templating: Customised open‑source Vue.js template
+
+### Note
+Note
+This was a team project. My personal contributions include: project leadership, system design, database schema design, front‑end development (Vue.js template customization, localStorage cart, API integration), and report writing. Backend API implementation and MongoDB deployment were done by my teammates.
+
+The code snippets above are representative of the front‑end logic I wrote. Full source code is not included here due to team collaboration.
