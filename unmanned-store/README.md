@@ -149,3 +149,4 @@ async function login() {
 
 ### Note
 This was a team final year project. The content above reflects only my personal contributions as project leader, system designer, AI model tuner, database schema designer, hardware interaction logic designer, and developer of the customer‑facing web portal + Flask API core. Backend sales analysis, hardware assembly, and Arduino code were completed by my teammates.
+
