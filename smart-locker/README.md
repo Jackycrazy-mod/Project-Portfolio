@@ -140,8 +140,19 @@ async function guest_access() {
     }
 }
 ```
-### 5. 
+### 5. Technologies Used
 - Frontend: HTML, CSS, JavaScript (vanilla, async/await, fetch API, sessionStorage)
 - Backend (designed by me, implemented by teammate): Node.js + Express REST API
 - Database: MongoDB (schema designed by me)
 - Hardware (logic designed by me, implemented by teammate): ESP32, electromagnetic lock, DHT11, HC-SR505, buzzer, LED
+
+### 6. Key Design Diagrams & Screenhots
+**Login Page:**
+<img width="446" height="247" alt="image" src="https://github.com/user-attachments/assets/4f0a80bb-f9f6-482c-bc5e-f4788b9c3f0b" />
+**Control Page:**
+<img width="446" height="247" alt="image" src="https://github.com/user-attachments/assets/fcb7110c-55d4-48cb-a617-6caa69e8764a" />
+**Relation Chart:**
+<img width="446" height="247" alt="image" src="https://github.com/user-attachments/assets/ac456504-9d99-4afd-b42d-e90ff20ba11a" />
+
+
+
