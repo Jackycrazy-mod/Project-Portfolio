@@ -134,10 +134,6 @@ async function login() {
     <td align="center" width="446"><strong>Detection Result</strong><br><img src="https://github.com/user-attachments/assets/90a7d064-6803-4668-9c15-1ad2a62bbc38" width="446" height="247"></td>
   </tr>
   <tr>
-    <td align="center" width="3468"><strong>Locker Showcase</strong><br><img src="https://github.com/user-attachments/assets/7e17a3a4-eb47-4f4c-9477-d57749425fa6" width="3468" height="4624"></td>
-    <td align="center" width="3468"><strong>Locker hardwares</strong><br><img src="https://github.com/user-attachments/assets/b93bc2ea-04cb-48d5-b681-a66d04edeb5f" width="3468" height="4624"></td>
-  </tr>
-  <tr>
     <td align="center" width="446">
       <strong>User Registration Page</strong><br>
       <img src="https://github.com/user-attachments/assets/14204d37-b26c-49ce-bdc3-04732bf1f4c6" width="446" height="247" alt="Login page">
@@ -146,14 +142,17 @@ async function login() {
       <strong>Top Up Pages</strong><br>
       <img src="https://github.com/user-attachments/assets/d21214c9-5998-45a5-840b-43d74cc47fab" width="446" height="247" alt="Control panel">
     </td>
-    <td align="center" width="446">
-      <img src="https://github.com/user-attachments/assets/72c36f7c-1f6e-4330-8606-6d15f17a4feb" width="446" height="247" alt="Control panel">
-    </td>
-    <td align="center" width="446">
-      <img src="https://github.com/user-attachments/assets/3a6db46a-c3ef-470f-9160-ba2b6a750fd1" width="446" height="247" alt="Control panel">
-    </td>
+  </tr>
+  <tr>
+    <td align="center" width="3468"><strong>Locker Showcase</strong><br><img src="https://github.com/user-attachments/assets/7e17a3a4-eb47-4f4c-9477-d57749425fa6" width="3468" height="4624"></td>
+    <td align="center" width="3468"><strong>Top Up Pages</strong><br><img src="https://github.com/user-attachments/assets/72c36f7c-1f6e-4330-8606-6d15f17a4feb" width="3468" height="4624"></td>
+  </tr>
+  <tr>
+    <td align="center" width="3468"><strong>Locker Showcase</strong><br><img src="https://github.com/user-attachments/assets/7e17a3a4-eb47-4f4c-9477-d57749425fa6" width="3468" height="4624"></td>
+    <td align="center" width="3468"><strong>Top Up Pages</strong><br><img src="https://github.com/user-attachments/assets/3a6db46a-c3ef-470f-9160-ba2b6a750fd1" width="3468" height="4624"></td>
   </tr>
 </table>
 
 ### Note
 This was a team final year project. The content above reflects only my personal contributions as project leader, system designer, AI model tuner, database schema designer, hardware interaction logic designer, and developer of the customer‑facing web portal + Flask API core. Backend sales analysis, hardware assembly, and Arduino code were completed by my teammates.
+
