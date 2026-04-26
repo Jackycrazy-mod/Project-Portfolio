@@ -156,5 +156,17 @@ async function guest_access() {
     <div style="font-weight: bold; margin-bottom: 8px;">Figure 2: Control panel</div>
     <img src="https://github.com/user-attachments/assets/d784edd3-2d11-4a3a-8a48-66fd9b015858" width="446" height="247" alt="Control panel">
   </div>
+    
+  <div style="display: flex; gap: 20px; justify-content: center;">
+    <div style="text-align: center; width: 446px;">
+      <div style="font-weight: bold; margin-bottom: 8px;">Figure 3: Hardware Logic</div>
+      <img src="https://github.com/user-attachments/assets/442efbea-b206-45c8-985c-1526c95b1b83" width="446" height="247">
+    </div>
+    <div style="text-align: center; width: 446px;">
+      <div style="font-weight: bold; margin-bottom: 8px;">Figure 4: OTP Alert</div>
+      <img src="https://github.com/user-attachments/assets/9dd26db2-9d8f-4b5c-ba6d-4662233f3026" width="446" height="247">
+    </div>
+  </div>
 </div>
+
 
