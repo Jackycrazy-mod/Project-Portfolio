@@ -4,6 +4,10 @@ A simple fan website for a singer, built as a fundamental front-end project.
 The site includes a home page, about page, songs page, contact page, with interactive hover effects, responsive layout, and basic form validation.
 
 **Demo:** Not hosted (static HTML/CSS/JS, screenshots provided below)
+<img width="940" height="529" alt="image" src="https://github.com/user-attachments/assets/813d8524-1221-4450-bd31-904045a505b2" />
+<img width="940" height="529" alt="image" src="https://github.com/user-attachments/assets/11512298-63ab-4903-b85a-9c31bbe8c1d5" />
+<img width="940" height="529" alt="image" src="https://github.com/user-attachments/assets/a6c5885d-5b71-45ad-9971-bf92879c233b" />
+<img width="940" height="529" alt="image" src="https://github.com/user-attachments/assets/22508f44-68be-4e28-8a41-531d2cd9d501" />
 
 ---
 
