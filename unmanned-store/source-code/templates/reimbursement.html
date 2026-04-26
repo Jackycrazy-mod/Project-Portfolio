@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Select</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: "Poppins", sans-serif;
+        }
+
+        body {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            background: white;
+        }
+
+        .main-container {
+            width: 800px;
+            height: 570px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: row;
+            position: relative;
+            z-index: 10;
+            overflow: hidden;
+            background: #4285f4;
+            padding: 30px;
+            box-shadow: 0 0 8px rgba(0, 0, 0, 0.3);
+            border-radius: 2px;
+            border-radius: 1rem;
+            margin: 2rem;
+            overflow: hidden;
+            cursor: pointer;
+        }
+
+        .confirmMessage-container {
+            position: absolute;
+            top: 0px;
+            right: 35px;
+            margin: 2rem;
+            border-radius: 1rem;
+            overflow: hidden;
+            cursor: pointer;
+            background: white;
+            margin: 2rem;
+            border-radius: 1rem;
+            overflow: hidden;
+            cursor: pointer;
+        }
+
+        img {
+            width: 250px;
+            height: 250px;
+            background: white;
+        }
+
+        button {
+            background-color: white;
+            border: hidden;
+        }
+
+        .sub-container {
+            background: white;
+            margin: 2rem;
+            border-radius: 1rem;
+            overflow: hidden;
+            cursor: pointer;
+        }
+
+        .btn_confirm :hover {
+            background-color: greenyellow;
+            transition: 0.5s;
+        }
+
+        .btn_cancel :hover {
+            background-color: red;
+            transition: 0.5s;
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        .logout-button-container {
+            position: absolute;
+            top: 0px;
+            right: 0px;
+            margin: 2rem;
+            border-radius: 1rem;
+            overflow: hidden;
+            cursor: pointer;
+        }
+
+        .btn_logOut {
+            width: 150px;
+            height: 40px;
+        }
+
+        .btn_logOut:hover {
+            background-color: crimson;
+            color: white;
+            transition: 0.5s;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main-container">
+        <div class="confirmMessage-container">
+            <h1>Confirm to cancel this membership card?</h1>
+        </div>
+        <div class="sub-container">
+            <button class="btn_cancel" id="btn_cancel">
+                <img src="https://cdn-icons-png.flaticon.com/512/66/66847.png" alt="" />
+            </button>
+            <h1>Cancel</h1>
+        </div>
+        <div class="sub-container">
+            <button class="btn_confirm" id="btn_confirm">
+                <img src="https://static-00.iconduck.com/assets.00/confirm-icon-512x512-z1hmhk5b.png" alt="" />
+            </button>
+            <h1>Confirm</h1>
+        </div>
+    </div>
+    <script>
+        var button_confirm = document.getElementById("btn_confirm")
+        var button_cancel = document.getElementById("btn_cancel")
+
+        var now_url = window.location.href
+        const urlRegex = /^(?:\w+:\/\/)?(?:[^\/]+)(?:\/|$)/
+        var matchedPart = now_url.match(urlRegex);
+        var extractedUrl = matchedPart ? matchedPart[0] : '';
+
+        if (button_confirm) {
+            button_confirm.addEventListener("click", confirm)
+        }
+
+        if (button_cancel) {
+            button_cancel.addEventListener("click", cancel)
+        }
+
+        async function confirm() {
+            const uuid = sessionStorage.getItem("uuid")
+            const next_page = extractedUrl + "app/pageSelect"
+
+            const requestOptions = {
+                method: 'PUT',
+                headers: {
+                    'Accept': 'application/json',
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify({
+                    uuid : uuid,
+                    active : "false"
+                })
+            }
+
+            try {
+                const response = await fetch("https://27bcccf9-09f5-4669-9825-3ccda226c27c-00-2xpspom7via33.janeway.replit.dev/card/deactivate", requestOptions)
+                const data = await response.json()
+                console.log(data)
+                location.replace(next_page)
+
+                if (!response.ok) {
+                    throw new Error("Network response was not ok")
+                }
+
+            } catch (error) {
+                console.error("Rhere was an error!", error)
+            }
+        }
+
+        async function cancel() {
+            const next_page = extractedUrl + "app/pageSelect"
+            location.replace(next_page)
+        }
+    </script>
+</body>
+
+</html>

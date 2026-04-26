@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ko shop login</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        body {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            background: #4285F4;
+        }
+
+        .main-container {
+            width: 410px;
+            height: 570px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: row;
+            position: relative;
+            z-index: 10;
+            overflow: hidden;
+            background: #fff;
+            padding: 30px;
+            box-shadow: 0 0 8px rgba(0, 0, 0, 0.3);
+            border-radius: 2px;
+        }
+
+        .container {
+            width: 820px;
+            height: 100%;
+            position: absolute;
+            left: 0;
+            z-index: -1;
+            display: flex;
+            flex-direction: row;
+            transition: all 0.5s ease;
+        }
+
+        .login-container,
+        .signup-container {
+            width: 410px;
+            padding: 30px;
+            height: 100%;
+        }
+
+        #slide:checked~.container {
+            left: -410px;
+            position: absolute;
+        }
+
+        .container .text {
+            font-size: 35px;
+            font-weight: 600;
+            text-align: center;
+        }
+
+        .container form {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+        }
+
+        .container form .data {
+            height: 45px;
+            width: 100%;
+            margin: 20px 0;
+        }
+
+        form .data label {
+            font-size: 18px;
+        }
+
+        form .data input {
+            height: 100%;
+            width: 100%;
+            padding-left: 10px;
+            font-size: 17px;
+            border: 1px solid silver;
+            outline: none;
+            border-radius: 2px;
+        }
+
+        .data input:focus {
+            border-color: #4285F4;
+            border-bottom-width: 2.5px;
+        }
+
+        form .forgot-pass {
+            margin-top: 30px;
+            display: flex;
+            justify-content: center;
+            align-self: start;
+        }
+
+        form .forgot-pass a {
+            color: #4285F4;
+            text-decoration: none;
+        }
+
+        form .forgot-pass a:hover {
+            text-decoration: underline;
+        }
+
+        form .btn-login {
+            margin: 52px 0 20px 0;
+            height: 45px;
+            width: 100%;
+        }
+
+        form .btn-signup {
+            margin: 20px 0;
+            height: 45px;
+            width: 100%;
+        }
+
+        form .btn-login button,
+        form .btn-signup button {
+            height: 100%;
+            width: 100%;
+            background: #4285F4;
+            color: #fff;
+            font-size: 18px;
+            font-weight: 500;
+            border: none;
+            text-transform: uppercase;
+            cursor: pointer;
+            border-radius: 2px;
+        }
+
+        .btn-login button:hover,
+        .btn-signup button:hover {
+            background: #fff;
+            border: 2px solid #4285F4;
+            color: #4285F4;
+        }
+
+        form .signup-link {
+            text-align: center;
+        }
+
+        form .signup-link a {
+            color: #4285F4;
+            text-decoration: none;
+        }
+
+        form .signup-link .slide {
+            cursor: pointer;
+        }
+
+        form .signup-link a:hover {
+            text-decoration: underline;
+        }
+
+        input[type="checkbox"] {
+            display: none;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="main-container">
+        <input type="checkbox" id="slide">
+
+        <div class="container">
+            <div class="login-container">
+
+                <div class="text">
+                    Login
+                </div>
+
+                <form action="#">
+                    <div class="data">
+                        <label for="">Email</label>
+                        <input type="text" id="login_input_email" required>
+                    </div>
+                    <div class="data">
+                        <label for="">UUID</label>
+                        <input type="password" id="login_input_uuid" required>
+                    </div>
+
+                    <div class="btn-login">
+                        <button type="submit" id="button_login">login</button>
+                    </div>
+
+                    <div class="signup-link">
+                        Not a member ? <a href="#"><label for="slide" class="slide">Signup now</label></a>
+                    </div>
+                </form>
+            </div>
+
+
+            <div class="signup-container">
+                <div class="text">Sign up</div>
+
+                <form action="#">
+                    <div class="data">
+                        <label for="">Name</label>
+                        <input type="text" id="signup_input_name" required>
+                    </div>
+                    <div class="data">
+                        <label for="">Email</label>
+                        <input type="text" id="signup_input_email" required>
+                    </div>
+                    <div class="data">
+                        <label for="">Phone Number</label>
+                        <input type="text" id="signup_input_phoneNumber" required>
+                    </div>
+                    <div class="data">
+                        <label for="">Address</label>
+                        <input type="text" id="signup_input_address" required>
+                    </div>
+
+                    <div class="btn-signup">
+                        <button type="submit" id="button_signup">Sing Up</button>
+                    </div>
+
+                    <div class="signup-link">
+                        Already a member ? <a href="#"><label for="slide" class="slide">Register now</label></a>
+                    </div>
+                </form>
+
+            </div>
+        </div>
+        <script>
+            var button_login = document.getElementById("button_login")
+            var button_signup = document.getElementById("button_signup")
+            var now_url = window.location.href
+            const urlRegex = /^(?:\w+:\/\/)?(?:[^\/]+)(?:\/|$)/
+            var matchedPart = now_url.match(urlRegex);
+            var extractedUrl = matchedPart ? matchedPart[0] : '';
+
+            if (button_login) {
+                button_login.addEventListener("click",login)
+            }
+
+            if (button_signup) {
+                button_signup.addEventListener("click", signUp)
+            }
+
+            async function login() {
+                const input_email = document.getElementById("login_input_email").value
+                const input_uuid = document.getElementById("login_input_uuid").value
+
+                const requestOptions = {
+                    method: 'POST',
+                    headers: {
+                        'Accept': 'application/json',
+                        'Content-Type': 'application/json'
+                    },
+                    body: JSON.stringify({
+                        email: input_email,
+                        uuid: input_uuid
+                    })
+                }
+
+                try {
+                    const response = await fetch("https://27bcccf9-09f5-4669-9825-3ccda226c27c-00-2xpspom7via33.janeway.replit.dev/customer/login", requestOptions)
+                    const data = await response.json()
+                    const matching_status = data["match"]
+                    const after_page = extractedUrl + "app/pageSelect"
+                    if (matching_status == false) {
+                        alert("Wrong ID or wrong password")
+                    }
+                    else if (matching_status == true) {
+                        sessionStorage.setItem("email", input_email)
+                        sessionStorage.setItem("uuid",input_uuid)
+                        location.replace(after_page)
+                    }
+
+                    if (!response.ok) {
+                        throw new Error("Network response was not ok")
+                    }
+
+                } catch (error) {
+                    console.error("Rhere was an error!", error)
+                }
+            }
+
+            async function signUp() {
+                const input_name = document.getElementById("signup_input_name").value
+                const input_email = document.getElementById("signup_input_email").value
+                const input_phoneNM = document.getElementById("signup_input_phoneNumber").value
+                const input_address = document.getElementById("signup_input_address").value
+
+                const requestOptions = {
+                    method: 'POST',
+                    headers: {
+                        'Accept': 'application/json',
+                        'Content-Type': 'application/json'
+                    },
+                    body: JSON.stringify({
+                        name: input_name,
+                        phone: input_phoneNM,
+                        email: input_email,
+                        address: input_address
+                    })
+                }
+
+                try {
+                    const response = await fetch("https://27bcccf9-09f5-4669-9825-3ccda226c27c-00-2xpspom7via33.janeway.replit.dev/customer/registration", requestOptions)
+                    const data = await response.json()
+                    const acknowledge_status = data["Add_customer"]["acknowledged"]
+                    const insertedId = data["Add_customer"]["insertedId"]
+                    if (acknowledge_status == false) {
+                        alert("Your request is not acknowledged, please try again")
+                    }
+                    else if (acknowledge_status == true) {
+                        alert(`Your UUID is ${insertedId}. This message will apear once only!`)
+                        document.getElementById("signup_input_name").value = ""
+                        document.getElementById("signup_input_email").value = ""
+                        document.getElementById("signup_input_phoneNumber").value = ""
+                        document.getElementById("signup_input_address").value = ""
+                    }
+
+                    if (!response.ok) {
+                        throw new Error("Network response was not ok")
+                    }
+
+                } catch (error) {
+                    console.error("Rhere was an error!", error)
+                }
+            }
+        </script>
+</body>
+
+</html>

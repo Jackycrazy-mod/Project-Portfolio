@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Select</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        body {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            background: white;
+        }
+
+        .main-container {
+            width: 1000px;
+            height: 650px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: row;
+            position: relative;
+            z-index: 10;
+            overflow: hidden;
+            background: #4285F4;
+            padding: 30px;
+            box-shadow: 0 0 8px rgba(0, 0, 0, 0.3);
+            border-radius: 2px;
+            border-radius: 1rem;
+            margin: 2rem;
+            overflow: hidden;
+            cursor: pointer;
+        }
+
+        .topUpMessage-container {
+            position: absolute;
+            top: 0px;
+            margin: 2rem;
+            border-radius: 1rem;
+            overflow: hidden;
+            cursor: pointer;
+            margin: 2rem;
+            border-radius: 1rem;
+            overflow: hidden;
+            cursor: pointer;
+            color: white;
+            font-weight: bold;
+            font-size: 50px;
+        }
+
+
+        img{
+            width: 250px;
+            height: 250px;
+            background: white;
+        }
+
+        button{
+            background-color: white;
+            border: hidden;
+        }
+
+        .sub-container{
+            background: white;
+            margin: 2rem;
+            border-radius: 1rem;
+            overflow: hidden;
+            cursor: pointer;
+        }
+
+        h1{
+            text-align: center;
+        }
+
+        .logout-button-container {
+            position: absolute;
+            top: 0px;
+            right: 0px;
+            margin: 2rem;
+            border-radius: 1rem;
+            overflow: hidden;
+            cursor: pointer;
+        }
+
+        .btn_logOut{
+            width: 150px;
+            height: 40px;
+        }
+
+        .btn_logOut:hover{
+            background-color: crimson;
+            color: white;
+            transition: 0.5s;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main-container">
+        <div class="topUpMessage-container">
+           Choose your deposit method
+        </div>
+
+        <div class="sub-container">
+            <button class="btn_oct" id="btn_oct">
+                <img src="https://media.licdn.com/dms/image/C510BAQF6gv10RJKNqg/company-logo_200_200/0/1631417492590/octopus_cards_limited_logo?e=2147483647&v=beta&t=smFewsB_2rRvMPPDfGqbkRCUqXntbMoHxebegAFy9uE" alt="">
+            </button>
+            <h1>Octopus Card</h1>
+        </div>
+        <div class="sub-container">
+            <button class="btn_credit" id="btn_credit">
+                <img src="https://static.vecteezy.com/system/resources/previews/000/574/730/original/credit-card-icon-vector.jpg" alt="">
+            </button>
+            <h1>Credit Card </h1>
+        </div>
+
+        <div class="sub-container">
+            <button class="btn_wechat" id="btn_wechat">
+                <img src="https://static.vecteezy.com/system/resources/previews/018/930/576/non_2x/wechat-logo-wechat-icon-transparent-free-png.png" alt="">
+            </button>
+            <h1>WeChat </h1>
+        </div>
+
+    </div>
+
+    <script>
+        var btn_oct = document.getElementById("btn_oct")
+        var btn_credit = document.getElementById("btn_credit")
+        var btn_wechat = document.getElementById("btn_wechat")
+
+        
+        var now_url = window.location.href
+        const urlRegex = /^(?:\w+:\/\/)?(?:[^\/]+)(?:\/|$)/
+        var matchedPart = now_url.match(urlRegex);
+        var extractedUrl = matchedPart ? matchedPart[0] : '';
+
+        
+        if (btn_oct) {
+            btn_oct.addEventListener("click", top_up)
+        }
+
+        if (btn_credit) {
+            btn_credit.addEventListener("click", top_up)
+        }
+
+        if (btn_wechat) {
+            btn_wechat.addEventListener("click", top_up)
+        }
+
+        async function top_up(){
+            const next_page = extractedUrl + "app/pageSelect/topUpSelect/topUp"
+            location.replace(next_page)
+        }
+    </script>
+</body>
+
+</html>

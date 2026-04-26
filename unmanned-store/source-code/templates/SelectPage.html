@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Select</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        body {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            background: white;
+        }
+
+        .main-container {
+            width: 800px;
+            height: 570px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: row;
+            position: relative;
+            z-index: 10;
+            overflow: hidden;
+            background: #4285F4;
+            padding: 30px;
+            box-shadow: 0 0 8px rgba(0, 0, 0, 0.3);
+            border-radius: 2px;
+            border-radius: 1rem;
+            margin: 2rem;
+            overflow: hidden;
+            cursor: pointer;
+        }
+
+        img{
+            width: 250px;
+            height: 250px;
+            background: white;
+        }
+
+        button{
+            background-color: white;
+            border: hidden;
+        }
+
+        .sub-container{
+            background: white;
+            margin: 2rem;
+            border-radius: 1rem;
+            overflow: hidden;
+            cursor: pointer;
+        }
+
+        button :hover{
+            background-color: yellow;
+            transition: 1s;
+        }
+
+        h1{
+            text-align: center;
+        }
+
+        .logout-button-container {
+            position: absolute;
+            top: 0px;
+            right: 0px;
+            margin: 2rem;
+            border-radius: 1rem;
+            overflow: hidden;
+            cursor: pointer;
+        }
+
+        .btn_logOut{
+            width: 150px;
+            height: 40px;
+        }
+
+        .btn_logOut:hover{
+            background-color: crimson;
+            color: white;
+            transition: 0.5s;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main-container">
+        <div class="logout-button-container">
+            <button class="btn_logOut" id="btn_logOut">Log Out</button>
+        </div>
+        <div class="sub-container">
+            <button class="btn_topUp" id="btn_topUp">
+                <img src="https://static.thenounproject.com/png/2464489-200.png" alt="">
+            </button>
+            <h1>Top-up</h1>
+        </div>
+        <div class="sub-container">
+            <button class="btn_reimbursement" id="btn_reimbursement">
+                <img src="https://icons.iconarchive.com/icons/pictogrammers/material/512/credit-card-refund-icon.png" alt="">
+            </button>
+            <h1>Reimbursement </h1>
+        </div>
+
+    </div>
+
+    <script>
+        var button_topUp = document.getElementById("btn_topUp")
+        var button_reimbursement = document.getElementById("btn_reimbursement")
+        var button_logOut = document.getElementById("btn_logOut")
+
+        var now_url = window.location.href
+        const urlRegex = /^(?:\w+:\/\/)?(?:[^\/]+)(?:\/|$)/
+        var matchedPart = now_url.match(urlRegex);
+        var extractedUrl = matchedPart ? matchedPart[0] : '';
+
+        const uuid = sessionStorage.getItem("uuid")
+        console.log(uuid)
+
+        if (button_logOut) {
+            button_logOut.addEventListener("click",logOut)
+        }
+
+        if (button_topUp) {
+            button_topUp.addEventListener("click",topUp_page)
+        }
+
+        if (button_reimbursement) {
+            button_reimbursement.addEventListener("click",reimbursement_page)
+        }
+
+        async function logOut() {
+            const next_page = extractedUrl + "app/loginSign"
+            sessionStorage.clear()
+            location.replace(next_page)
+        }
+
+        async function topUp_page() {
+            const next_page = extractedUrl + "app/pageSelect/topUpSelect"
+            location.replace(next_page)
+        }
+
+        async function reimbursement_page() {
+            const next_page = extractedUrl + "app/pageSelect/reimbursement"
+            location.replace(next_page)
+        }
+    </script>
+</body>
+
+</html>
