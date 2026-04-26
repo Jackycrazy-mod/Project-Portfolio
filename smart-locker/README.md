@@ -151,12 +151,12 @@ async function guest_access() {
   <tr>
     <!-- 左边图片 -->
     <td align="center" width="446">
-      <strong>Figure 1: Login page</strong><br>
+      <strong>**Login page**</strong><br>
       <img src="https://github.com/user-attachments/assets/fdc8c0bb-61fd-4a2f-a749-1a30ea3d44e0" width="446" height="247" alt="Login page">
     </td>
     <!-- 右边图片 -->
     <td align="center" width="446">
-      <strong>Figure 2: Control panel</strong><br>
+      <strong>**Control panel**</strong><br>
       <img src="https://github.com/user-attachments/assets/d784edd3-2d11-4a3a-8a48-66fd9b015858" width="446" height="247" alt="Control panel">
     </td>
   </tr>
