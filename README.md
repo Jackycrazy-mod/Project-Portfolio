@@ -1,35 +1,36 @@
 # Project Portfolio – Chung Tsz Kin
 
-This repository documents the projects I worked on during my studies at VTC and HKUST.  
+This repository documents the projects I worked on during my studies at VTC (HD in AI and Smart Technology) and HKUST (BEng in Computer Engineering).  
 Due to team collaboration and hardware-based nature, not all source code is included here.  
-Instead, I provide **system descriptions, my individual contributions, and key code snippets** to demonstrate my understanding.
+Instead, this portfolio provides **system descriptions, my individual contributions, and key code snippets** to demonstrate my understanding and hands-on experience.
 
-## Projects
+---
 
-### 1. Smart Locker System (05/2023 – 07/2023)
-- **My role:** Front-end adaptation + MongoDB schema design + Arduino testing  
-- **Tech:** HTML/CSS/JS, MongoDB, Arduino IDE
+## Projects Overview
 
-- [Screenshots](smart-locker/photos)
-- [Code snippet: MongoDB schema](#)  
-- [Code snippet: Arduino servo control (basic)](#)
+| Project | Technologies | My Focus |
+|---------|--------------|----------|
+| [Paper Idol Fans Club Website](./paper-idol-website/README.md) | HTML, CSS, JS (responsive, hover effects, form validation) | Front-end adaptation, responsive navigation, validation logic |
+| [Arduino IoT Sensing System](./arduino-iot/README.md) | Arduino IDE, C++, ThingView, DHT11 | Full Arduino coding (sensor reading, serial output), cloud upload |
+| [Smart Locker System](./smart-locker/README.md) | HTML/CSS/JS, MongoDB, Arduino, API | Web app development, initial design, database structure |
+| [Restaurant POS System](./pos-system/README.md) | HTML/CSS/JS, Vue.js (template modification), Node.js, MongoDB | Front-end customization, localStorage cart logic, UI adaptation |
+| [AI Travel & Research Agent](./ai-travel-agent/README.md) | LangChain, OpenAI, Serper API, Streamlit | AI model integration, report writing, system design |
+| [Unmanned Store (FYP)](./unmanned-store/README.md) | YOLOv8, IoT sensors, MongoDB, Node.js | AI model building/tuning, project design, system architecture |
 
-### 2. Arduino IoT Sensing System (03/2023 – 04/2023)
-- **My role:** Full Arduino coding + ThingView setup  
-- **Tech:** Arduino IDE, C++, ThingView  
-- [Full Arduino code](/arduino-iot.ino) – upload a simple .ino file  
-- [Screenshot of ThingView dashboard](#)
+---
 
-### 3. Restaurant POS System (03/2023 – 04/2023)
-- **My role:** Front-end customization (open-source template adaptation)  
-- **Tech:** HTML/CSS/JS, Vue.js (basic modification)  
-- [Before/after screenshots](#) – show the template and your changes  
-- [Code snippet: localStorage cart logic](#)
+## Notes
 
-### 4. Smart Shop (VTC FYP)
-- **My role:** System concept, hardware integration planning, presentation  
-- [Block diagram](#) – draw a simple flowchart or find a picture online (cite it)  
-- [Project poster / slide (if any)](#)
+- All projects were completed as **team work** during my HD program at VTC unless otherwise stated.  
+- The descriptions and code snippets in each subfolder reflect **only my personal contributions**.  
+- For complete project documentation (reports, diagrams, full team contributions), please refer to the original reports available upon request.
 
-## Note
-These were team projects. The code and descriptions reflect only the parts I personally contributed to.
+---
+
+## Contact
+
+- **Email:** your.email@connect.ust.hk  
+- **GitHub:** [github.com/yourusername](https://github.com/yourusername)  
+- **HKUST Computer Engineering (Year 2/3)**
+
+*Last updated: April 2026*
