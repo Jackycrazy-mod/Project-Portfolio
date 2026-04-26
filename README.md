@@ -29,7 +29,7 @@ Instead, this portfolio provides **system descriptions, my individual contributi
 
 ## Contact
 
-- **Email:** your.email@connect.ust.hk  
+- **Email:** tkchungad@connect.ust.hk
 - **GitHub:** [github.com/yourusername](https://github.com/yourusername)  
 - **HKUST Computer Engineering (Year 2/3)**
 
