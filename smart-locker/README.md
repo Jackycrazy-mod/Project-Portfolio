@@ -147,20 +147,17 @@ async function guest_access() {
 - Hardware (logic designed by me, implemented by teammate): ESP32, electromagnetic lock, DHT11, HC-SR505, buzzer, LED
 
 ### 6. Key Design Diagrams & Screenhots
-**Login Page:**
-<img width="446" height="247" alt="image" src="https://github.com/user-attachments/assets/4f0a80bb-f9f6-482c-bc5e-f4788b9c3f0b" /> **Control Page:** <img width="446" height="247" alt="image" src="https://github.com/user-attachments/assets/fcb7110c-55d4-48cb-a617-6caa69e8764a" />
-**Relation Chart:**
-<img width="446" height="247" alt="image" src="https://github.com/user-attachments/assets/ac456504-9d99-4afd-b42d-e90ff20ba11a" />
-
-<div style="display: flex; gap: 20px; justify-content: center; flex-wrap: wrap;">
-  <figure style="margin: 0; text-align: center;">
-    <img src="https://github.com/user-attachments/assets/4f0a80bb-f9f6-482c-bc5e-f4788b9c3f0b" alt="Login page" width="446" height="247">
-    <figcaption><em>Figure 1: Login page</em></figcaption>
-  </figure>
-  <figure style="margin: 0; text-align: center;">
-    <img src="https://github.com/user-attachments/assets/ac456504-9d99-4afd-b42d-e90ff20ba11a" alt="Control panel" width="446" height="247">
-    <figcaption><em>Figure 2: Control panel</em></figcaption>
-  </figure>
+<div style="display: flex; flex-direction: column; gap: 20px;">
+  <div style="display: flex; gap: 20px; justify-content: center;">
+    <figure style="margin: 0; text-align: center;">
+      <img src="https://github.com/user-attachments/assets/2dd0b06f-e838-4682-8262-690556793684" width="446" height="247">
+      <figcaption>Figure 1: Conceptual ER diagram</figcaption>
+    </figure>
+    <figure style="margin: 0; text-align: center;">
+      <img src="https://github.com/user-attachments/assets/9728f57a-7b7a-4a12-b5fb-f65f072c90b1" width="446" height="247">
+      <figcaption>Figure 2: System flow chart</figcaption>
+    </figure>
+  </div>
 </div>
 
 
