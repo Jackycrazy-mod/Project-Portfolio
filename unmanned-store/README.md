@@ -2,7 +2,7 @@
 
 An autonomous retail system that provides a seamless, cashier‑free shopping experience. Customers tap their NFC membership card to enter, pick items, and check out automatically via AI object detection. The system includes a membership management portal, inventory control, and sales analytics.
 
-**My Role:** Project Leader, System Designer, AI Model Tuning, Database Schema Design, Hardware Interaction Logic, Front‑end & API Development (Core Modules)  
+**My Role:** System Designer, AI Model Tuning, Database Schema Design, Hardware Interaction Logic, Front‑end & API Development (Core Modules)  
 **Team:** 4 members – backend/sales analytics by teammates; my contributions as below.
 
 ---
