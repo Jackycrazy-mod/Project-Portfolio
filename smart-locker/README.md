@@ -147,18 +147,14 @@ async function guest_access() {
 - Hardware (logic designed by me, implemented by teammate): ESP32, electromagnetic lock, DHT11, HC-SR505, buzzer, LED
 
 ### 6. Key Design Diagrams & Screenhots
-<div style="display: flex; flex-direction: column; gap: 20px;">
-  <div style="display: flex; gap: 20px; justify-content: center;">
-    <figure style="margin: 0; text-align: center;">
-      <img src="https://github.com/user-attachments/assets/2dd0b06f-e838-4682-8262-690556793684" width="446" height="247">
-      <figcaption>Figure 1: Conceptual ER diagram</figcaption>
-    </figure>
-    <figure style="margin: 0; text-align: center;">
-      <img src="https://github.com/user-attachments/assets/9728f57a-7b7a-4a12-b5fb-f65f072c90b1" width="446" height="247">
-      <figcaption>Figure 2: System flow chart</figcaption>
-    </figure>
+<div style="display: flex; gap: 20px; justify-content: center; flex-wrap: wrap;">
+  <div style="text-align: center; width: 446px;">
+    <div style="font-weight: bold; margin-bottom: 8px;">Figure 1: Login page</div>
+    <img src="https://github.com/user-attachments/assets/fdc8c0bb-61fd-4a2f-a749-1a30ea3d44e0" width="446" height="247" alt="Login page">
+  </div>
+  <div style="text-align: center; width: 446px;">
+    <div style="font-weight: bold; margin-bottom: 8px;">Figure 2: Control panel</div>
+    <img src="https://github.com/user-attachments/assets/d784edd3-2d11-4a3a-8a48-66fd9b015858" width="446" height="247" alt="Control panel">
   </div>
 </div>
-
-
 
