@@ -1,4 +1,4 @@
-# AI Travel & Research Agent
+# AI Travel Agent
 
 This project implements an intelligent travel planning agent powered by LangChain. The agent can autonomously search the web, scrape websites, and generate comprehensive travel reports based on user input. It can be accessed via a user-friendly web interface built with Streamlit or as a REST API endpoint.
 
