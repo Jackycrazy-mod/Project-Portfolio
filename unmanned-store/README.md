@@ -53,3 +53,8 @@ def detect():
         if item in ["bottle", "banana", "book"]:
             shopping_dict["shopping_list"].append(item)
     # ... return dictionary ...
+```
+
+### 3. Database Schema Design (MongoDB – Collections & Fields)
+I designed the following collections (implementation by teammate):
+- Customers – `_id (UUID)`, `name`, `email`, `phone`, `address`, `balance`, `age_group`, `gender`, `active`
