@@ -5,7 +5,7 @@ The site includes a home page, about page, songs page, contact page, with intera
 
 **Demo:** Not hosted (static HTML/CSS/JS, screenshots provided below)
 
-**Home Page*:*:
+**Home Page:**
 <img width="940" height="529" alt="image" src="https://github.com/user-attachments/assets/813d8524-1221-4450-bd31-904045a505b2" />
 **Profile Page:**
 <img width="940" height="529" alt="image" src="https://github.com/user-attachments/assets/11512298-63ab-4903-b85a-9c31bbe8c1d5" />
