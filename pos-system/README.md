@@ -105,3 +105,8 @@ Below is the ER diagram I designed for the MongoDB database (implementation by t
 - Staffs:
 <img width="980" height="536" alt="34" src="https://github.com/user-attachments/assets/0ed8766d-5f7a-40ae-9217-b5112edc2510" />
 
+### Technologies Used
+- Front‑end: HTML, CSS, JavaScript, Vue.js (basic modification)
+- Client storage: localStorage (cart persistence)
+- API calls: Fetch API (async/await)
+- Templating: Customised open‑source Vue.js template
