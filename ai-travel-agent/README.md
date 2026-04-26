@@ -49,7 +49,7 @@ The primary adaptation work involved re-engineering the agent's core instruction
 
 ---
 
-## Technologies Used (My Level)
+## Technologies Used
 
 - **LangChain**: For building the LLM application framework.
 - **OpenAI GPT-3.5-Turbo**: As the core large language model.
@@ -61,7 +61,7 @@ The primary adaptation work involved re-engineering the agent's core instruction
 
 ---
 
-## Code Highlights (Key Contributions)
+## Code Highlights
 
 ### 1. The Travel Agent's "Persona" (System Prompt)
 This is the most significant part of my contribution that distinguishes this project from a standard research template.
@@ -77,3 +77,31 @@ system_message = SystemMessage(
             2/ ... (Output structure rules) ...
             6/ The report you write should include an introduction, overview, text (recommended accommodation, daily itinerary, local things to note), budget (the overall itinerary budget is shown in US dollars), and summary
             7/ In the final output, You should include all reference data & original links to back up your report"""
+```
+
+### 2. Streamlit Web Interface
+```python
+# Code snippet from `main.py`
+def main():
+    st.set_page_config(page_title="AI research agent", page_icon=":bird:")
+    st.header("AI research agent:")
+    query = st.text_input("Research goal")
+    if query:
+        st.write("Doing research for ", query)
+        result = agent({"input": query})
+        st.info(result['output'])
+```
+
+## How the Agent Works
+1.User Input: The user provides a research goal.
+2.Agent Reasoning: The LangChain agent, guided by my custom prompt, uses its tools to gather information. It first searches the web via Serper.
+3.Iterative Gathering: If the agent determines it needs more detailed information, it will use the ScrapeWebsite tool to extract content from specific URLs.
+4.Memory & Summarization: ConversationSummaryBufferMemory is used to manage the conversation history.
+5.Final Output: After its research loop, it generates a structured, fact-based report as defined in the system prompt.
+
+## Screenshots
+Sample outputs
+<img width="1240" height="1754" alt="AI travel agent France pages_page-0002" src="https://github.com/user-attachments/assets/c13e58b3-cdaa-45d6-8997-74e55f14cc5a" />
+<img width="1240" height="1754" alt="AI travel agent France pages_page-0001" src="https://github.com/user-attachments/assets/9ecc3ea2-25b5-4135-b39c-5b5028e11ef8" />
+<img width="1240" height="1754" alt="AI travel agent France pages_page-0003" src="https://github.com/user-attachments/assets/88d90e4b-f55f-4e58-a29e-308a9433957b" />
+
