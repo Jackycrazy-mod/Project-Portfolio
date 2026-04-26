@@ -118,35 +118,28 @@ async function login() {
 ```
 
 ### Screenshots:
-<div style="display: flex; gap: 20px; justify-content: center; flex-wrap: wrap;">
-  <figure style="margin: 0; text-align: center; width: 446px;">
-    <img src="./images/landing_page.png" width="446" alt="Checkout Landing Page">
-    <figcaption>
-      Figure 1: Checkout counter – "Tap your card"
-    </figcaption>
-  </figure>
-  <figure style="margin: 0; text-align: center; width: 446px;">
-    <img src="./images/shopping_list.png" width="446" alt="Shopping List Confirmation">
-    <figcaption>
-      Figure 2: Detected items confirmation page
-    </figcaption>
-  </figure>
-</div>
-<div style="display: flex; gap: 20px; justify-content: center; flex-wrap: wrap;">
-  <figure style="margin: 0; text-align: center; width: 446px;">
-    <img src="./images/login_signup.png" width="446" alt="Login & Signup">
-    <figcaption>
-      Figure 3: Customer registration / login portal
-    </figcaption>
-  </figure>
-  <figure style="margin: 0; text-align: center; width: 446px;">
-    <img src="./images/topup.png" width="446" alt="Top-up page">
-    <figcaption>
-      Figure 4: Add balance to NFC card
-    </figcaption>
-  </figure>
-</div>
+<table>
+  <tr>
+    <td align="center" width="446">
+      <strong>Staff Login page</strong><br>
+      <img src="https://github.com/user-attachments/assets/7ba9a186-04f2-4aaf-b0f2-696ec3da2a5a" width="446" height="247" alt="Login page">
+    </td>
+    <td align="center" width="446">
+      <strong>Inventory System</strong><br>
+      <img src="https://github.com/user-attachments/assets/0f30af9e-5927-4b7d-89a2-143e6426b7da" width="446" height="247" alt="Control panel">
+    </td>
+  </tr>
+  <tr>
+    <td align="center" width="446"><strong>Database Designt</strong><br><img src="https://github.com/user-attachments/assets/2d9aec11-905b-4aed-8d4c-1ee0e1726614" width="446" height="247"></td>
+    <td align="center" width="446"><strong>Detection Result</strong><br><img src="https://github.com/user-attachments/assets/90a7d064-6803-4668-9c15-1ad2a62bbc38" width="446" height="247"></td>
+  </tr>
+  <tr>
+    <td align="center" width="3468"><strong>Locker Showcase</strong><br><img src="https://github.com/user-attachments/assets/7e17a3a4-eb47-4f4c-9477-d57749425fa6" width="3468" height="4624"></td>
+    <td align="center" width="3468"><strong>Locker hardwares</strong><br><img src="https://github.com/user-attachments/assets/b93bc2ea-04cb-48d5-b681-a66d04edeb5f" width="3468" height="4624"></td>
+  </tr>
+</table>
 
 ### Note
 This was a team final year project. The content above reflects only my personal contributions as project leader, system designer, AI model tuner, database schema designer, hardware interaction logic designer, and developer of the customer‑facing web portal + Flask API core. Backend sales analysis, hardware assembly, and Arduino code were completed by my teammates.
+
 
