@@ -148,9 +148,7 @@ async function guest_access() {
 
 ### 6. Key Design Diagrams & Screenhots
 **Login Page:**
-<img width="446" height="247" alt="image" src="https://github.com/user-attachments/assets/4f0a80bb-f9f6-482c-bc5e-f4788b9c3f0b" />
-**Control Page:**
-<img width="446" height="247" alt="image" src="https://github.com/user-attachments/assets/fcb7110c-55d4-48cb-a617-6caa69e8764a" />
+<img width="446" height="247" alt="image" src="https://github.com/user-attachments/assets/4f0a80bb-f9f6-482c-bc5e-f4788b9c3f0b" /> **Control Page:** <img width="446" height="247" alt="image" src="https://github.com/user-attachments/assets/fcb7110c-55d4-48cb-a617-6caa69e8764a" />
 **Relation Chart:**
 <img width="446" height="247" alt="image" src="https://github.com/user-attachments/assets/ac456504-9d99-4afd-b42d-e90ff20ba11a" />
 
