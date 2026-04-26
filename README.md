@@ -30,7 +30,7 @@ Instead, this portfolio provides **system descriptions, my individual contributi
 ## Contact
 
 - **Email:** tkchungad@connect.ust.hk
-- **GitHub:** [github.com/yourusername](https://github.com/yourusername)  
+- **GitHub:** [github.com/Jackycrazy-mod](https://github.com/Jackycrazy-mod)  
 - **HKUST Computer Engineering (Year 2/3)**
 
 *Last updated: April 2026*
