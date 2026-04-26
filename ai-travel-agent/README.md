@@ -94,14 +94,18 @@ def main():
 
 ## How the Agent Works
 1.User Input: The user provides a research goal.
+
 2.Agent Reasoning: The LangChain agent, guided by my custom prompt, uses its tools to gather information. It first searches the web via Serper.
+
 3.Iterative Gathering: If the agent determines it needs more detailed information, it will use the ScrapeWebsite tool to extract content from specific URLs.
+
 4.Memory & Summarization: ConversationSummaryBufferMemory is used to manage the conversation history.
+
 5.Final Output: After its research loop, it generates a structured, fact-based report as defined in the system prompt.
 
 ## Screenshots
 Sample outputs
-<img width="1240" height="1754" alt="AI travel agent France pages_page-0002" src="https://github.com/user-attachments/assets/c13e58b3-cdaa-45d6-8997-74e55f14cc5a" />
 <img width="1240" height="1754" alt="AI travel agent France pages_page-0001" src="https://github.com/user-attachments/assets/9ecc3ea2-25b5-4135-b39c-5b5028e11ef8" />
+<img width="1240" height="1754" alt="AI travel agent France pages_page-0002" src="https://github.com/user-attachments/assets/c13e58b3-cdaa-45d6-8997-74e55f14cc5a" />
 <img width="1240" height="1754" alt="AI travel agent France pages_page-0003" src="https://github.com/user-attachments/assets/88d90e4b-f55f-4e58-a29e-308a9433957b" />
 
