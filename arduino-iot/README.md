@@ -3,7 +3,7 @@
 A complete IoT solution for warehouse environmental monitoring, featuring **BLE sensor networks**, **real‑time data aggregation**, **MQTT cloud upload**, **automatic alerts** (PushPlus), **local LCD display**, and a **Python data retrieval template**. Designed to prevent goods deterioration and enable smart lighting control.
 
 **My Role:** Hardware Wiring, Python Data Scripting  
-**Team:** 4 members (BLE peripheral code by teammates; central hub, cloud integration, alerts, hardware, Python template by me)
+**Team:** 4 members (BLE peripheral code by teammates; central hub, cloud integration, alerts, hardware, data display)
 
 ---
 
@@ -102,7 +102,7 @@ for i in range(len(data["feeds"])):
 <img width="1920" height="1080" alt="image4" src="https://github.com/user-attachments/assets/35d0b82a-87ac-46af-8cde-bdf4ddaf541c" />
 
 ## Note
-This was a team project. My personal contributions include: central hub embedded code, all hardware wiring, Python data retrieval script, project leadership, and system integration. The BLE peripheral code and basic LCD example were contributed by my teammates.
+This was a team project. My personal contributions include: central hub embedded code, all hardware wiring, Python data retrieval script. The BLE peripheral code and basic LCD example were contributed by my teammates.
 
 Some source code files are lost, but the core logic is preserved in the files above.
 
