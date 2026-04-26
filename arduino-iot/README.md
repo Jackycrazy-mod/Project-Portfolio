@@ -101,3 +101,8 @@ for i in range(len(data["feeds"])):
 <img width="684" height="376" alt="image" src="https://github.com/user-attachments/assets/5ad5fb00-a1df-44b6-8be0-c92e0f61b6bb" />
 <img width="1920" height="1080" alt="image4" src="https://github.com/user-attachments/assets/35d0b82a-87ac-46af-8cde-bdf4ddaf541c" />
 
+## Note
+This was a team project. My personal contributions include: central hub embedded code, all hardware wiring, Python data retrieval script, project leadership, and system integration. The BLE peripheral code and basic LCD example were contributed by my teammates.
+
+Some source code files are lost, but the core logic is preserved in the files above.
+
