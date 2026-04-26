@@ -149,15 +149,17 @@ async function guest_access() {
 ### 6. Key Design Diagrams & Screenhots
 <table>
   <tr>
-    <!-- 左边图片 -->
     <td align="center" width="446">
-      <strong>**Login page**</strong><br>
+      <strong>Login page</strong><br>
       <img src="https://github.com/user-attachments/assets/fdc8c0bb-61fd-4a2f-a749-1a30ea3d44e0" width="446" height="247" alt="Login page">
     </td>
-    <!-- 右边图片 -->
     <td align="center" width="446">
-      <strong>**Control panel**</strong><br>
+      <strong>Control panel</strong><br>
       <img src="https://github.com/user-attachments/assets/d784edd3-2d11-4a3a-8a48-66fd9b015858" width="446" height="247" alt="Control panel">
     </td>
+  </tr>
+  <tr>
+    <td align="center" width="446"><strong>Hardware Logic</strong><br><img src="https://github.com/user-attachments/assets/442efbea-b206-45c8-985c-1526c95b1b83" width="446" height="247"></td>
+    <td align="center" width="446"><strong>OTP Alert</strong><br><img src="https://github.com/user-attachments/assets/9dd26db2-9d8f-4b5c-ba6d-4662233f3026" width="446" height="247"></td>
   </tr>
 </table>
