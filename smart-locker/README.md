@@ -167,3 +167,6 @@ async function guest_access() {
     <td align="center" width="3468"><strong>Locker hardwares</strong><br><img src="https://github.com/user-attachments/assets/b93bc2ea-04cb-48d5-b681-a66d04edeb5f" width="3468" height="4624"></td>
   </tr>
 </table>
+
+## Note
+This was a **team project**. The above lists only my personal contributions as **project leader, system designer, and front-end logic integrator**. Hardware implementation, backend API coding, and ER diagram drawing were completed by other team members under my design guidance.
