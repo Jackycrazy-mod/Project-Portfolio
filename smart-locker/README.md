@@ -100,7 +100,7 @@ async function lockerUnLock() {
 ```
 
 #### Share Access (Generate OTP)
-```
+```javascript
 async function giveAccess(name) {
     // get receiver_id from employee list, then
     await getAccess(sender_id, receiver_id)
@@ -119,7 +119,7 @@ async function getAccess(sender_id, receiver_id) {
 ```
 
 #### Guest Access with OTP
-```
+```javascript
 async function guest_access() {
     const requestOptions = {
         method: 'PUT',
