@@ -152,5 +152,16 @@ async function guest_access() {
 **Relation Chart:**
 <img width="446" height="247" alt="image" src="https://github.com/user-attachments/assets/ac456504-9d99-4afd-b42d-e90ff20ba11a" />
 
+<div style="display: flex; gap: 20px; justify-content: center; flex-wrap: wrap;">
+  <figure style="margin: 0; text-align: center;">
+    <img src="./images/login.png" alt="Login page" width="446" height="247">
+    <figcaption><em>Figure 1: Login page</em></figcaption>
+  </figure>
+  <figure style="margin: 0; text-align: center;">
+    <img src="./images/control_panel.png" alt="Control panel" width="446" height="247">
+    <figcaption><em>Figure 2: Control panel</em></figcaption>
+  </figure>
+</div>
+
 
 
