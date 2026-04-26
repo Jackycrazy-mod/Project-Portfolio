@@ -163,7 +163,7 @@ async function guest_access() {
     <td align="center" width="446"><strong>Schema Diagram (EDR)</strong><br><img src="https://github.com/user-attachments/assets/9dd26db2-9d8f-4b5c-ba6d-4662233f3026" width="446" height="247"></td>
   </tr>
   <tr>
-    <td align="center" width="3468" height="4624"><strong>Locker Showcase</strong><br><img src="https://github.com/user-attachments/assets/7e17a3a4-eb47-4f4c-9477-d57749425fa6" width="3468" height="4624"></td>
-    <td align="center" width="3468" height="4624"><strong>Locker hardwares</strong><br><img src="https://github.com/user-attachments/assets/b93bc2ea-04cb-48d5-b681-a66d04edeb5f" width="3468" height="4624"></td>
+    <td align="center" width="3468"><strong>Locker Showcase</strong><br><img src="https://github.com/user-attachments/assets/7e17a3a4-eb47-4f4c-9477-d57749425fa6" width="3468" height="4624"></td>
+    <td align="center" width="3468"><strong>Locker hardwares</strong><br><img src="https://github.com/user-attachments/assets/b93bc2ea-04cb-48d5-b681-a66d04edeb5f" width="3468" height="4624"></td>
   </tr>
 </table>
