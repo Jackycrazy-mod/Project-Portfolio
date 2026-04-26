@@ -58,3 +58,94 @@ def detect():
 ### 3. Database Schema Design (MongoDB – Collections & Fields)
 I designed the following collections (implementation by teammate):
 - Customers – `_id (UUID)`, `name`, `email`, `phone`, `address`, `balance`, `age_group`, `gender`, `active`
+- Products – `prod_id`, `name`, `price`, `stock_warehouse`, `stock_shelf`, `weight`, `category`
+- Bills – `bill_id`, `customer_id`, `items (list of product+quantity)`, `entry_time`, `exit_time`, `total`
+- Entry/Exit logs – `customer_id`, `timestamp`, `type (enter/exit)`
+
+### 4. Hardware Interaction Logic (Signal Flow Design)
+- Defined the NFC card entry gate sequence: card read → API call to /customer/login → check balance & active status → servo open → record entry.
+- Defined the checkout counter flow: card tap → trigger camera → run YOLO detection → POST to /capture-shoppingList → store data → redirect to shopping list confirmation page.
+- Specified weight sensor integration (optional): number of items calculated from weight change.
+- Designed the gate device behaviour: HTTP server on ESP32 that listens for "open" command from API.
+
+### 5. Flask API Server
+I wrote the central Flask application that handles
+- Landing page (entry point for checkout counter)
+- Detection trigger endpoint (/capture-shoppingList) – calls my YOLO detection and stores the shopping list in a global data_set.
+- Status polling (/get_status) – used by the landing page to detect when a shopping list is ready.
+- Order confirmation (/confirm_order) – resets the session after checkout.
+- All customer‑facing web pages (login/signup, selection, top‑up, reimbursement, shopping list confirmation).
+
+### 6. Customer Web Portal (Front‑end & API Integration)
+- Login & Signup (LogSignPage.html) – complete HTML/CSS/JS with async fetch calls to backend API.
+- Selection page (SelectPage.html) – top‑up / reimbursement choices.
+- Top‑up flow – amount input, payment method selection, balance update via API.
+- Reimbursement (card cancellation) – deactivates the card.
+- Shopping list confirmation (shoppingList.html) – displays detected items, total price, confirm button.
+
+### Key Code Highlights
+**Flask API – Detection Endpoint**
+```python
+@app.route("/capture-shoppingList", methods=["POST"])
+def capture_shoppingList():
+    data = request.get_json()
+    shopping_dict = {}
+    for i in detect()["shopping_list"]:
+        shopping_dict[i] = shopping_dict.get(i, 0) + 1
+    data_set["uuid"] = data["uuid"]
+    data_set["shopping_list"] = shopping_dict
+    data_set["new_status"] = True
+    return data_set
+```
+
+**Front‑end – Login Function (from `LogSignPage.html`)**
+```python
+async function login() {
+    const response = await fetch("https://.../customer/login", {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ email: input_email, uuid: input_uuid })
+    });
+    const data = await response.json();
+    if (data.match == true) {
+        sessionStorage.setItem("email", input_email);
+        sessionStorage.setItem("uuid", input_uuid);
+        location.replace(extractedUrl + "app/pageSelect");
+    } else {
+        alert("Wrong ID or wrong password");
+    }
+}
+```
+
+### Screenshots:
+<div style="display: flex; gap: 20px; justify-content: center; flex-wrap: wrap;">
+  <figure style="margin: 0; text-align: center; width: 446px;">
+    <img src="./images/landing_page.png" width="446" alt="Checkout Landing Page">
+    <figcaption>
+      Figure 1: Checkout counter – "Tap your card"
+    </figcaption>
+  </figure>
+  <figure style="margin: 0; text-align: center; width: 446px;">
+    <img src="./images/shopping_list.png" width="446" alt="Shopping List Confirmation">
+    <figcaption>
+      Figure 2: Detected items confirmation page
+    </figcaption>
+  </figure>
+</div>
+<div style="display: flex; gap: 20px; justify-content: center; flex-wrap: wrap;">
+  <figure style="margin: 0; text-align: center; width: 446px;">
+    <img src="./images/login_signup.png" width="446" alt="Login & Signup">
+    <figcaption>
+      Figure 3: Customer registration / login portal
+    </figcaption>
+  </figure>
+  <figure style="margin: 0; text-align: center; width: 446px;">
+    <img src="./images/topup.png" width="446" alt="Top-up page">
+    <figcaption>
+      Figure 4: Add balance to NFC card
+    </figcaption>
+  </figure>
+</div>
+
+### Note
+This was a team final year project. The content above reflects only my personal contributions as project leader, system designer, AI model tuner, database schema designer, hardware interaction logic designer, and developer of the customer‑facing web portal + Flask API core. Backend sales analysis, hardware assembly, and Arduino code were completed by my teammates.
