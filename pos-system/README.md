@@ -100,7 +100,7 @@ Below is the ER diagram I designed for the MongoDB database (implementation by t
 <img width="943" height="715" alt="7" src="https://github.com/user-attachments/assets/9d96e557-9e82-4635-a998-2e78bbbb4705" />
 
 - Orders:
-<img width="893" height="691" alt="image" src="https://github.com/user-attachments/assets/24acc1fb-c735-4e23-b068-b89762394a56" />
+<img width="1006" height="683" alt="23" src="https://github.com/user-attachments/assets/80f433e9-73fe-4f21-8fde-63ce69f6dbad" />
 
 - Staffs:
 <img width="980" height="536" alt="34" src="https://github.com/user-attachments/assets/0ed8766d-5f7a-40ae-9217-b5112edc2510" />
