@@ -2,7 +2,7 @@
 
 A complete IoT solution for warehouse environmental monitoring, featuring **BLE sensor networks**, **real‑time data aggregation**, **MQTT cloud upload**, **automatic alerts** (PushPlus), **local LCD display**, and a **Python data retrieval template**. Designed to prevent goods deterioration and enable smart lighting control.
 
-**My Role:** Project Leader, System Architect, Main Embedded Developer (Central Hub), Hardware Wiring, Python Data Scripting  
+**My Role:** Hardware Wiring, Python Data Scripting  
 **Team:** 4 members (BLE peripheral code by teammates; central hub, cloud integration, alerts, hardware, Python template by me)
 
 ---
