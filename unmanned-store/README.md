@@ -144,12 +144,12 @@ async function login() {
     </td>
   </tr>
   <tr>
-    <td align="center" width="3468"><strong>Locker Showcase</strong><br><img src="https://github.com/user-attachments/assets/7e17a3a4-eb47-4f4c-9477-d57749425fa6" width="3468" height="4624"></td>
-    <td align="center" width="3468"><strong>Top Up Pages</strong><br><img src="https://github.com/user-attachments/assets/72c36f7c-1f6e-4330-8606-6d15f17a4feb" width="3468" height="4624"></td>
+    <td align="center" width="446"><strong>Locker Showcase</strong><br><img src="https://github.com/user-attachments/assets/7e17a3a4-eb47-4f4c-9477-d57749425fa6" width="447" height="314"></td>
+    <td align="center" width="446"><strong>Top Up Pages</strong><br><img src="https://github.com/user-attachments/assets/72c36f7c-1f6e-4330-8606-6d15f17a4feb" width="447" height="314"></td>
   </tr>
   <tr>
-    <td align="center" width="3468"><strong>Locker Showcase</strong><br><img src="https://github.com/user-attachments/assets/7e17a3a4-eb47-4f4c-9477-d57749425fa6" width="3468" height="4624"></td>
-    <td align="center" width="3468"><strong>Top Up Pages</strong><br><img src="https://github.com/user-attachments/assets/3a6db46a-c3ef-470f-9160-ba2b6a750fd1" width="3468" height="4624"></td>
+    <td align="center" width="446"><strong>Locker Showcase</strong><br><img src="https://github.com/user-attachments/assets/7e17a3a4-eb47-4f4c-9477-d57749425fa6" width="447" height="314"></td>
+    <td align="center" width="446"><strong>Top Up Pages</strong><br><img src="https://github.com/user-attachments/assets/3a6db46a-c3ef-470f-9160-ba2b6a750fd1" width="447" height="314"></td>
   </tr>
 </table>
 
