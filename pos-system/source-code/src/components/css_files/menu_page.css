@@ -1,0 +1,128 @@
+.menu-page body {
+    background-color: #e3e7e8;
+    font-family: system-ui;
+  }
+  .menu-page .container {
+    width: 1000px;
+    margin: auto;
+    transition: 0.5s;
+  }
+  .menu-page header {
+    display: grid;
+    grid-template-columns: 1fr 50px;
+    margin-top: 50px;
+  }
+  .menu-page header .shopping {
+    position: relative;
+    text-align: right;
+  }
+  .menu-page header .shopping img {
+    width: 40px;
+  }
+  .menu-page header .shopping span {
+    background: red;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    position: absolute;
+    top: -5px;
+    left: 80%;
+    padding: 3px 10px;
+  }
+  .menu-page .list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 20px;
+    row-gap: 20px;
+    margin-top: 50px;
+  }
+  .menu-page .list .item {
+    text-align: center;
+    background-color: #dce0e1;
+    padding: 20px;
+    box-shadow: 0 50px 50px #757676;
+    letter-spacing: 1px;
+  }
+  .menu-page .list .item img {
+    width: 90%;
+  }
+  .menu-page .list .item .title {
+    font-weight: 600;
+  }
+  .menu-page .list .item .price {
+    margin: 10px;
+  }
+  .menu-page .list .item button {
+    background-color: #1c1f25;
+    color: #fff;
+    width: 100%;
+    padding: 10px;
+  }
+  .menu-page .card {
+    position: fixed;
+    top: 0;
+    left: 100%;
+    width: 500px;
+    background-color: #453e3b;
+    height: 100vh;
+    transition: 0.5s;
+  }
+  .menu-page .active .card {
+    left: calc(100% - 500px);
+  }
+  .menu-page .active .container {
+    transform: translateX(-200px);
+  }
+  .menu-page .card h1 {
+    color: #e8bc0e;
+    font-weight: 100;
+    margin: 0;
+    padding: 0 20px;
+    height: 80px;
+    display: flex;
+    align-items: center;
+  }
+  .menu-page .card .checkOut {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .menu-page .card .checkOut div {
+    background-color: #e8bc0e;
+    width: 100%;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  .menu-page .card .checkOut div:nth-child(2) {
+    background-color: #1c1f25;
+    color: #fff;
+  }
+  .menu-page .listCard li {
+    display: grid;
+    grid-template-columns: 100px repeat(3, 1fr);
+    color: #fff;
+    row-gap: 10px;
+  }
+  .menu-page .listCard li div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .menu-page .listCard li img {
+    width: 90%;
+  }
+  .menu-page .listCard li button {
+    background-color: #fff5;
+    border: none;
+  }
+  .menu-page .listCard .count {
+    margin: 0 10px;
+  }
